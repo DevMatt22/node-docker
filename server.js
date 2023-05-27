@@ -14,6 +14,7 @@ async function main() {
       })
 
     server.use("/", mocks.server(server.Router()));
+    console.log("test")
 
     const result = await server.start();
     console.info(result);
